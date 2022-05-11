@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LeaderBoard</title>
+    <style>
+        h1{
+            text-align: center;
+        }
+        form{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+        }
+        input{
+            padding: 0.5rem 0.1rem;
+        }
+        button{
+            padding: 0.5rem;
+        }
+    </style>
+</head>
+<body>
+    <h1>30 Days Of JavScript Challenge Leaderboard</h1>
+    <form>
+    <input type='text' placeholder='firstname' name='firstname' id="firstName">
+      <input type='text' placeholder='lastname' name='lastname' id="lastName">
+      <input type="text" placeholder="country" name="country" id="country">
+      <input type='number' placeholder='score' name='score' id="score">
+      <button id="btn">Add Player</button>
+    </form>
+
+    <section id="player-list"></section>
+
+    <script src="script.js"></script>
+</body>
+</html>
