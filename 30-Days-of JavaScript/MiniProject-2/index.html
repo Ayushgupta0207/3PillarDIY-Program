@@ -1,40 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>LeaderBoard</title>
-    <style>
-        h1{
-            text-align: center;
-        }
-        form{
-            display: flex;
-            align-items: center;
-            justify-content: center;
-
-        }
-        input{
-            padding: 0.5rem 0.1rem;
-        }
-        button{
-            padding: 0.5rem;
-        }
-    </style>
-</head>
-<body>
-    <h1>30 Days Of JavScript Challenge Leaderboard</h1>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Leader Board</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <header>30 Days of Javascript Challenge LeaderBoard</header>
     <form>
-    <input type='text' placeholder='firstname' name='firstname' id="firstName">
-      <input type='text' placeholder='lastname' name='lastname' id="lastName">
-      <input type="text" placeholder="country" name="country" id="country">
-      <input type='number' placeholder='score' name='score' id="score">
-      <button id="btn">Add Player</button>
+      <input type="text" class="fname" placeholder="First Name"/>
+      <input type="text" class="lname" placeholder="Last Name"/>
+      <input type="text" class="country" placeholder="Country"/>
+      <input type="text" class="score" placeholder="Player's Score"/>
+      <button type="submit" class="submit"> Add Player
+      </button>
     </form>
-
-    <section id="player-list"></section>
+    <div class="todo-container">
+      <ul class="todo-list"></ul>
+    </div>
 
     <script src="script.js"></script>
-</body>
+  </body>
 </html>
